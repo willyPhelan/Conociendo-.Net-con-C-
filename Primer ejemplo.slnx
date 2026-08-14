@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="Ejemplo 2/Proyecto 2 con Net Framework.csproj" />
+  <Project Path="Primer Proyecto con WinForm con Net Framework/Primer Proyecto con WinForm con Net Framework.csproj" />
   <Project Path="Primer Proyecto Prog lll/Primer Proyecto Prog lll.csproj" />
   <Project Path="Proyecto 3 con Net Framework/Proyecto 3 con Net Framework.csproj" />
   <Project Path="Proyecto 4 con Net Framework/Proyecto 4 con Net Framework.csproj" />
