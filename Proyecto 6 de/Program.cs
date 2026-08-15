@@ -1,0 +1,61 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics.SymbolStore;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Proyecto_7_Clases {
+    internal class Program {
+    
+    static void Main(string[] args) {
+    
+        int edad ; 
+
+        float sueldo ; 
+
+        string nombre ; 
+
+        int[] edades = new int[10] ; 
+
+        float[] sueldos = new float[10] ;
+
+        string[] nombres = new string[10] ;
+
+        Persona p1 = new Persona() ;  
+
+        p1.setEdad(25)  ;
+
+        Console.WriteLine("La edad de la persona es: " + p1.getEdad()) ;
+
+        
+        Botella b1 = new Botella() ;
+
+        b1.Capacidad = 1000 ;
+
+         int algo = b1.Capacidad ;  // lo guardo en una variable
+
+        
+         Console.WriteLine("Presione una tecla para continuar...") ;
+
+         Console.ReadKey() ; 
+
+
+
+
+        Perro pe1 = new Perro() ; 
+
+        pe1.Nombre = "Firulais" ;
+
+        Console.WriteLine("Y el nombre del perro es: " + pe1.Nombre) ;
+
+        } 
+
+       
+
+       
+
+}
+
+}

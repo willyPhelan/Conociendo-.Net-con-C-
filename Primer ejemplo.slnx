@@ -1,9 +1,10 @@
 <Solution>
-  <Project Path="Ejemplo 2/Proyecto 2 con Net Framework.csproj" />
-  <Project Path="Primer Proyecto con WinForm con Net Framework/Primer Proyecto con WinForm con Net Framework.csproj" />
+  <Project Path="Ejemplo 2/Proyecto 2 con Net Framework.csproj" Id="004583cc-3688-49d6-9c4b-e645fbd6b48a" />
+  <Project Path="Primer Proyecto con WinForm con Net Framework/Primer Proyecto con WinForm con Net Framework.csproj" Id="c6a61f95-fd19-44b6-8495-0070cf1a2e6b" />
   <Project Path="Primer Proyecto Prog lll/Primer Proyecto Prog lll.csproj" />
-  <Project Path="Proyecto 3 con Net Framework/Proyecto 3 con Net Framework.csproj" />
-  <Project Path="Proyecto 4 con Net Framework/Proyecto 4 con Net Framework.csproj" />
-  <Project Path="Proyecto 6 con Net Framework/Proyecto 6 con Net Framework.csproj" />
-  <Project Path="Prpyecto 5 con Net Framework/Proyecto 5 con Net Framework.csproj" />
+  <Project Path="Proyecto 3 con Net Framework/Proyecto 3 con Net Framework.csproj" Id="2836e2b5-ce30-4bc0-9880-d17e39f6703a" />
+  <Project Path="Proyecto 4 con Net Framework/Proyecto 4 con Net Framework.csproj" Id="b1b09e5d-7345-4099-ad58-eb42c0381e91" />
+  <Project Path="Proyecto 6 con Net Framework/Proyecto 6 con Net Framework.csproj" Id="b502ac33-98a7-4df8-973e-0ce89165b9bf" />
+  <Project Path="Proyecto 6 de/Proyecto 7 de Consola con Net Framework CLASES.csproj" Id="7ba1cd39-8c9e-4e88-bc42-20948aa17160" />
+  <Project Path="Prpyecto 5 con Net Framework/Proyecto 5 con Net Framework.csproj" Id="432b97cc-9190-4bc3-80fa-d3ddc91c2886" />
 </Solution>
