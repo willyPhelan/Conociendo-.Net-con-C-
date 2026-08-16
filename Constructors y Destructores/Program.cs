@@ -27,14 +27,15 @@ namespace Proyecto_7_Clases {
 
         p1.setEdad(25)  ;
 
-        Console.WriteLine(p1.saludar()) ; 
+        Console.WriteLine(p1.saludar("Ana")) ; 
+
+        Console.WriteLine(p1.saludar());
 
         Console.WriteLine("La edad de " + p1.getnombre + " es: " + p1.getEdad()) ;
+   
+        Botella b1 = new Botella("Rojo", "Plastico") ;
 
-        
-         Botella b1 = new Botella("Rojo", "Plastico") ;
-
-      //  b1.Capacidad = 1000 ;
+        //  b1.Capacidad = 1000 ;
 
        //  int capacidad = b1.Capacidad ;  // lo guardo en una variable
 
@@ -44,14 +45,19 @@ namespace Proyecto_7_Clases {
 
          b1.recargar() ;
 
-         Console.Write("Después de recargar, la cantidad actual es: " + b1.CantidadActual) ;
+         Console.WriteLine("Después de recargar, la cantidad actual es: " + b1.CantidadActual) ;
+
+         b1.recargar(500) ;
+
+         Console.WriteLine("Después de recargar, la cantidad actual es: " + b1.CantidadActual) ;
+
+         Console.ReadKey() ; 
 
          Console.WriteLine("Presione una tecla para continuar...") ;
 
          Console.ReadKey() ; 
 
-/*
-
+    /*
 
         Perro pe1 = new Perro() ; 
 

@@ -29,7 +29,9 @@ namespace Proyecto_7_Clases{
 
         // constructor por defecto
 
-        public Botella() {} 
+        public Botella() {}
+
+        // atributos
         private int capacidad ; 
         private string color ;
         private string material ;
@@ -65,5 +67,15 @@ namespace Proyecto_7_Clases{
             return 50 ; // monto a pagar 
         }
 
+
+        public float recargar(int cantidad) {
+
+            cantidadActual += cantidad ;
+
+            float monto = cantidad * 50 / 100 ;
+
+            return monto ;
+        }
+
     }
-}
+} 

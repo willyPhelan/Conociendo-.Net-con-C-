@@ -39,9 +39,12 @@ namespace Proyecto_7_Clases {
 
         return "Hola " + nombre ;  }
 
+        
+
+        public string saludar(string nombre) { // sobrecarga de metodos cambiando los parametros
+
+            return "Hola " + nombre + ", ¿cómo estás? Soy " + this.nombre ;  }
+
         }
-        
-        
-        
-        
+    
         }
