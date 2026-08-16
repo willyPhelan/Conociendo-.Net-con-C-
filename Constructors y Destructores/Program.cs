@@ -23,21 +23,29 @@ namespace Proyecto_7_Clases {
 
         string[] nombres = new string[10] ; */
 
-        Persona p1 = new Persona() ;  
+        Persona p1 = new Persona("Willy") ;  
 
         p1.setEdad(25)  ;
 
-        Console.WriteLine("La edad de la persona es: " + p1.getEdad()) ;
+        Console.WriteLine(p1.saludar()) ; 
+
+        Console.WriteLine("La edad de " + p1.getnombre + " es: " + p1.getEdad()) ;
 
         
-        Botella b1 = new Botella("Rojo", "Plastico") ;
+         Botella b1 = new Botella("Rojo", "Plastico") ;
 
-        b1.Capacidad = 1000 ;
+      //  b1.Capacidad = 1000 ;
 
-         int capacidad = b1.Capacidad ;  // lo guardo en una variable
+       //  int capacidad = b1.Capacidad ;  // lo guardo en una variable
 
-         
-        
+         Console.WriteLine("Capacidad de la botella" + b1.Capacidad) ; 
+
+         Console.WriteLine("Cantidad actual: " + b1.CantidadActual) ;
+
+         b1.recargar() ;
+
+         Console.Write("Después de recargar, la cantidad actual es: " + b1.CantidadActual) ;
+
          Console.WriteLine("Presione una tecla para continuar...") ;
 
          Console.ReadKey() ; 

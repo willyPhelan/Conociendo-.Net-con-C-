@@ -9,8 +9,13 @@ namespace Proyecto_7_Clases {
 
     private int edad ; 
     private float sueldo ; 
-
     private string nombre ;  
+
+    public Persona (string nombre){  // constructor 
+
+        this.nombre = nombre ;
+    
+    }
 
     public void setEdad(int edad) { // metodo 
 
@@ -20,6 +25,23 @@ namespace Proyecto_7_Clases {
     public int getEdad() {
 
             return this.edad ;
-        } 
+        }
 
-        }}
+        public string getnombre {  // propiedad 
+          
+        get { return this.nombre; }
+        }
+
+
+        // metodos 
+
+        public string saludar(){
+
+        return "Hola " + nombre ;  }
+
+        }
+        
+        
+        
+        
+        }
