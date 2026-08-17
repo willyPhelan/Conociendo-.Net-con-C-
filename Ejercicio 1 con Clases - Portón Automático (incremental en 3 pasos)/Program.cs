@@ -12,6 +12,8 @@ namespace Ejercicio_1_con_Clases___Portón_Automático__incremental_en_3_pasos_ 
 
         PortonAutomatico porton = new PortonAutomatico() ;
 
+
+
    /*     porton.Cerrar() ;
 
         Console.WriteLine("El porton esta: ") ;
