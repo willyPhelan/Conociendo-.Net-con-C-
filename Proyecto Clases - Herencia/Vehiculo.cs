@@ -9,5 +9,7 @@ namespace Proyecto_Clases___Herencia {
     internal class Vehiculo{
 
         public string Motor{ get ; set ; }
+
+        public string Color { get; set ; }
     }
 }
