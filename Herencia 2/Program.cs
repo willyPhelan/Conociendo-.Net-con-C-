@@ -48,7 +48,16 @@ namespace Herencia_2 {
         animales.Add(g1) ;
         animales.Add(new Pez()) ; 
         animales.Add(new Canario()) ;
+
+        // utilizo una interfaz para segmentar animales que solo puedan volar
+
+        List<Flyers> listaVoladores = new List<Flyers> () ;
+
+        listaVoladores.Add(new Canario()) ; 
+        listaVoladores.Add(new Aguila()) ; 
         
+        // listaVoladores.Add(new Perro()) ; -- no puedo agregar perro porque no lo permite la interfaz
+
         // casteo automatico - fuerzo gato 
 
         Animal a2 = g1 ;
@@ -62,9 +71,6 @@ namespace Herencia_2 {
         foreach(Animal animal in animales){
 
         Console.WriteLine(animal.Comunicarse())  ; } 
-
-        
-
 
         Console.ReadKey() ;
 
