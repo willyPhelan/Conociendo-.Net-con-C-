@@ -72,8 +72,11 @@ namespace Proyecto_Clases___Herencia {
 
         Console.WriteLine("Color: " + camioneta.Color) ; 
 
-
         }
+
+        Auto a2 = new Auto() ;
+
+        a2.Motor = new Motor() ; // por agregacion 
 
         Console.ReadKey() ;
 
