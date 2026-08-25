@@ -5,12 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Proyecto_Clases___Herencia {
-    static class Lider  {
-
-        public static string algo() {
-
-            return "Hola soy lider" ; 
-        } 
+    internal class AnalistaFuncional:Persona {
     
     }
 }

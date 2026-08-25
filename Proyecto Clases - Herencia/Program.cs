@@ -8,13 +8,19 @@ namespace Proyecto_Clases___Herencia {
     internal class Program {
         static void Main(string[] args) {
 
-        Persona p1 = new Persona() ;
+        // Persona p1 = new Persona() ; no puedo instanciar una clase abrstacta! 
 
         Developer d1 = new Developer() ;
 
+        Console.WriteLine(Lider.algo()) ;
+
+        // persona es la clase base
+
+        Console.ReadKey() ;
+
         d1.Legajo = 01 ; 
 
-        p1.Apellido = "Lopez" ;
+        // p1.Apellido = "Lopez" ;
 
         Vehiculo v1= new Vehiculo() ;
 
