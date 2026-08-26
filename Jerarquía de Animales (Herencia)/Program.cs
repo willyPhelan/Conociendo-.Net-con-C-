@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Jerarquía_de_Animales__Herencia;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace Jerarquía_de_Animales__Herencia_ {
      internal class Program {
         static void Main(string[] args) {
 
-            Animal a1 = new Animal() ;
+         /*   Animal a1 = new Animal() ;
 
             a1.Nombre = "Saul" ;
             a1.Edad = 1 ; 
@@ -99,19 +100,96 @@ namespace Jerarquía_de_Animales__Herencia_ {
 
             var mayores = animales.Where(a => a.Edad > 3).ToList();
 
+            // lista sin filtro 
+
+            Console.Clear() ;
+
+            Console.WriteLine("Despues de borrado invoco lista:") ;
+
+            animales.ForEach(a => a.Describir()) ;
+
+            Console.ReadKey() ; 
+
+            Console.WriteLine("Despues del filtro:") ;
+
+
+
             // Mostramos la lista filtrada
             
             mayores.ForEach(a => a.Describir());
-           
-
-
-
           
+          */
 
+          Perro perro = new Perro() ;
+
+          Gato gato = new Gato() ; 
+
+       
+
+       //   perro.Describir() ;
+
+       /*   Console.WriteLine("Ahora el gato") ;
+
+          gato.Describir() ;
+
+          Console.ReadKey() ; */
+
+          Console.WriteLine("Nueva lista") ; 
+
+          List<Animal> animales = new List<Animal> {
+
+                new Perro("Firulais", 3, "Pastor", "Aleman"),
+
+                new Gato("Felix", 4, true),
+
+                new Perro("Rex", 5, "Labrador", "Chocolate"),
+
+                new Gato("Michi", 2, false),
+
+                new Perro("Milo", 1, "Caniche", "Toy")
+
+            } ;
+
+            foreach (Animal animal in animales){
+
+                animal.Describir() ; // Llamará al Describir() específico de Perro o Gato automáticamente
+            }
+
+            animales[0].HacerSonido() ; 
+
+            animales[3].HacerSonido() ; 
+
+            animales[2].Atender() ;
+            
+            animales[3].Atender() ;
+
+            Animal conejo = new Animal() ;
+
+            conejo.Describir() ;
+
+            conejo.Atender() ;
+
+            Conejo conejo2 = new Conejo("Pepe", 2, 2.00m) ;
+
+            conejo2.Describir() ;
+
+            conejo2.Atender() ;
+
+
+
+         
 
             Console.ReadKey() ;
 
+            
+         
 
         }
     }
 }
+
+
+
+
+
+

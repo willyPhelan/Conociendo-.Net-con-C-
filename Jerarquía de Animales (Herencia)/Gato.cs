@@ -35,8 +35,27 @@ namespace Jerarquía_de_Animales__Herencia_ {
         }
 
     public override void Describir(){ 
+
+      /*  Console.WriteLine("llamando a base") ;
+
+        base.Describir() ; 
+
+        Console.WriteLine("imprimiendo") ; */
     
         Console.WriteLine($"Nombre: {Nombre}, Edad: {Edad} años, Especie: {Especie}, Es de interior: {EsDeInterior}");}
+
+    
+
+
+    public override void HacerSonido(){ // en el contrato de la interfaz 
+            
+      Console.WriteLine($"{Nombre} Miaaaaau.") ; }
+
+    public override void Atender() {
+
+            Console.WriteLine($"Atendiendo al gato {Nombre}: desparasitación.") ;
+        }
+
 
     }
 }

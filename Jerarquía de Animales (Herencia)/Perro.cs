@@ -39,10 +39,33 @@ namespace Jerarquía_de_Animales__Herencia_ {
 
     // Sobrecarga de metodo
     public override void Describir(){ 
+
+      /* Console.WriteLine("llamando a base") ;   
+
+        base.Describir() ;
+
+        Console.ReadKey();
+         
+        Console.WriteLine("sin base") ; */
     
         Console.WriteLine($"Nombre: {Nombre}, Edad: {Edad} años, Especie: {Especie}, Raza: {Raza}");}
 
+
+
+    public override void HacerSonido(){ // en el contrato de la interfaz 
+            
+          Console.WriteLine($"{Nombre} Guauuu") ;
+       
+          }
+
+    public override void Atender(){
+
+           Console.WriteLine($"Atendiendo al perro {Nombre}: revisión general y vacunas.") ;
+        }
+
     }
+
+    
 
 
     }
