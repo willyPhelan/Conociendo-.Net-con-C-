@@ -32,9 +32,9 @@ namespace Jerarquía_de_Animales__Herencia{
  
             Console.WriteLine($"Nombre: {Nombre}, Edad {Edad},  Peso: {Peso} kg") ; }
 
-        public override  void HacerSonido() {
+        public override string HacerSonido() {
 
-            Console.WriteLine($"{Nombre} hace un resoplido suave.");
+            return $"{Nombre} hace un resoplido suave." ;
         }
 
     }

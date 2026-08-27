@@ -47,9 +47,9 @@ namespace Jerarquía_de_Animales__Herencia_ {
     
 
 
-    public override void HacerSonido(){ // en el contrato de la interfaz 
+    public override string HacerSonido(){ // en el contrato de la interfaz 
             
-      Console.WriteLine($"{Nombre} Miaaaaau.") ; }
+      return $"{Nombre} Miaaaaau." ; }
 
     public override void Atender() {
 

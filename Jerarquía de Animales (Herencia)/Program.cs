@@ -135,7 +135,7 @@ namespace Jerarquía_de_Animales__Herencia_ {
 
           Console.ReadKey() ; */
 
-    /*      Console.WriteLine("Nueva lista") ; 
+         Console.WriteLine("Nueva lista") ; 
 
           List<Animal> animales = new List<Animal> {
 
@@ -149,7 +149,7 @@ namespace Jerarquía_de_Animales__Herencia_ {
 
                 new Perro("Milo", 1, "Caniche", "Toy")
 
-            } ;
+            } ; /*
 
             foreach (Animal animal in animales){
 
@@ -198,6 +198,14 @@ namespace Jerarquía_de_Animales__Herencia_ {
             turno2.MostrarResumen() ;
 
             turno3.MostrarResumen() ; 
+
+            // Animal ani = new Animal() ; // tiene que fallar
+
+            foreach (Animal animal in animales) {
+                // En cada iteración se ejecuta la versión sobrescrita (override) correspondiente
+                string sonido = animal.HacerSonido();
+                Console.WriteLine(sonido);
+            }
              
 
             Console.ReadKey() ;

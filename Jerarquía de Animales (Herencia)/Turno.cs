@@ -10,12 +10,17 @@ namespace Jerarquía_de_Animales__Herencia_ {
         // Propiedades por asociación // con esto obtengo metodos y props de Animal y Veterinario
         public Animal Paciente { get ; set ; }
         public Veterinario Profesional { get ; set ; }
+
+        // Nueva propiedad para el ID único del turno
+        public int Id { get ; private set ; }
         
         // Propiedad de fecha y hora
         public DateTime FechaHora { get ; set ; }
 
         // Constructor con las tres propiedades
         public Turno(Animal paciente, Veterinario profesional, DateTime fechaHora) {
+
+            Id = RegistroVeterinaria.GenerarId() ; // Asignación automática del ID
             
             Paciente = paciente ;
 
@@ -30,6 +35,8 @@ namespace Jerarquía_de_Animales__Herencia_ {
             Console.WriteLine("========================================") ;
             Console.WriteLine("           RESUMEN DEL TURNO            ") ;
             Console.WriteLine("========================================") ;
+
+            Console.WriteLine($"           TURNO #{Id}");
 
             Console.WriteLine($"Fecha y Hora : {FechaHora:dd/MM/yyyy HH:mm} hs") ;
 

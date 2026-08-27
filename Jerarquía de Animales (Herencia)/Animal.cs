@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Jerarquía_de_Animales__Herencia_ {
-    internal class Animal:IAnimal {
+    internal abstract class Animal:IAnimal {
 
          public int Edad { get ; set ; }
 
@@ -55,11 +55,11 @@ namespace Jerarquía_de_Animales__Herencia_ {
       Console.WriteLine($"Nombre: {Nombre}, Edad: {Edad} años, Especie: {Especie}"); }
 
 
-      public virtual void HacerSonido(){ // en el contrato de la interfaz 
+      public abstract string HacerSonido() ; // en el contrato de la interfaz 
             
-      Console.WriteLine($"{Nombre} hace un sonido genérico.") ;
+   
        
-      }
+      
 
       public virtual void Atender(){ // en el contrato de la interfaz 
             

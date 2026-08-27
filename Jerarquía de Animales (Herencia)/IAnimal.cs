@@ -13,7 +13,7 @@ namespace Jerarquía_de_Animales__Herencia_ {
 
         // Métodos que deben implementar las clases
         void Describir() ;
-        void HacerSonido() ;
+        string HacerSonido() ;
         void Atender() ; 
     }
 }
