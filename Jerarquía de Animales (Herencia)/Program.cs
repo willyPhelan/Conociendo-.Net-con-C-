@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -122,7 +123,7 @@ namespace Jerarquía_de_Animales__Herencia_ {
 
           Perro perro = new Perro() ;
 
-          Gato gato = new Gato() ; 
+          Gato gato = new Gato("Mishi", 13, false) ; 
 
        
 
@@ -134,7 +135,7 @@ namespace Jerarquía_de_Animales__Herencia_ {
 
           Console.ReadKey() ; */
 
-          Console.WriteLine("Nueva lista") ; 
+    /*      Console.WriteLine("Nueva lista") ; 
 
           List<Animal> animales = new List<Animal> {
 
@@ -173,11 +174,31 @@ namespace Jerarquía_de_Animales__Herencia_ {
 
             conejo2.Describir() ;
 
-            conejo2.Atender() ;
+            conejo2.Atender() ;*/
+
+            Perro perro2 = new Perro("Can", 6, "nada", "nada") ;
 
 
+            Veterinario vet1 = new Veterinario("Juan", "00111" ) ;  
 
-         
+            Veterinario vet2 = new Veterinario("Salome", "11000" ) ; 
+
+            vet1.AtenderPaciente(gato) ; 
+
+            vet1.AtenderPaciente(perro) ; 
+
+            Turno turno1 = new Turno(gato, vet1, new DateTime()) ;
+
+            Turno turno2 = new Turno(perro, vet1, new DateTime()) ;
+
+            Turno turno3 = new Turno(perro2 , vet2, new DateTime(2001, 10, 1)) ;
+
+            turno1.MostrarResumen() ;
+
+            turno2.MostrarResumen() ;
+
+            turno3.MostrarResumen() ; 
+             
 
             Console.ReadKey() ;
 
