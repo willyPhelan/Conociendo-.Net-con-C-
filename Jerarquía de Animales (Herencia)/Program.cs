@@ -176,7 +176,7 @@ namespace Jerarquía_de_Animales__Herencia_ {
 
             conejo2.Atender() ;*/
 
-            Perro perro2 = new Perro("Can", 6, "nada", "nada") ;
+   /*         Perro perro2 = new Perro("Can", 6, "nada", "nada") ;
 
 
             Veterinario vet1 = new Veterinario("Juan", "00111" ) ;  
@@ -203,10 +203,22 @@ namespace Jerarquía_de_Animales__Herencia_ {
 
             foreach (Animal animal in animales) {
                 // En cada iteración se ejecuta la versión sobrescrita (override) correspondiente
-                string sonido = animal.HacerSonido();
-                Console.WriteLine(sonido);
-            }
+                string sonido = animal.HacerSonido() ;
+
+                Console.WriteLine(sonido) ;
+            } */
+
+            Cliente cliente1 = new Cliente("Juan", "111") ; 
+
+            Cliente cliente2 = new Cliente("Pablo", "222") ; 
              
+            cliente1.AgregarAnimal(new Perro("manolo", 11, "chiuaua", "chi")) ;
+
+            cliente1.AgregarAnimal(new Perro("Gemma", 1, "grande", "pastor")) ;
+
+            cliente1.AgregarAnimal(new Gato("Miau", 4, false)) ; 
+
+            cliente1.MostrarInformacion() ;
 
             Console.ReadKey() ;
 
